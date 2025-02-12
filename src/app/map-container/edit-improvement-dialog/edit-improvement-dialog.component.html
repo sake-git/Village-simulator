@@ -1,0 +1,37 @@
+<div>
+  <h1>Edit Improvements</h1>
+  <div class="container">
+    <div class="inner-div">
+      <p>Type:</p>
+
+      <div>
+        <p>{{ improvement?.type }}</p>
+      </div>
+    </div>
+    <div class="inner-div">
+      <p>Benefit:</p>
+
+      <div>
+        <p>{{ benefit?.count }} {{ benefit?.type }}</p>
+      </div>
+    </div>
+    <div class="inner-div">
+      <p>Cost:</p>
+
+      <div>
+        <p *ngFor="let resource of resources">
+          {{ resource.count }} {{ resource.type }}
+        </p>
+      </div>
+    </div>
+    <div class="float-right">
+      <button (click)="cancel()">Close</button>
+      <button (click)="upgrade()" [disabled]="!enableUpgrade">Upgrade</button>
+      <button (click)="downgrade()" [disabled]="!enableDowngrade">
+        Downgrade
+      </button>
+      <button (click)="remove()" [disabled]="!enableRemove">Remove</button>
+    </div>
+    <p class="error">{{ errorMessage }}</p>
+  </div>
+</div>

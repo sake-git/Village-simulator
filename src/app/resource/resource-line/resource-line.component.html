@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Available</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let resource of resources">
+      <td>
+        <img [src]="'/assets/' + resource.type + '.jpg'" /> {{ resource?.type }}
+      </td>
+      <td>{{ resource?.count }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,35 @@
+.container {
+  width: 50%;
+  max-width: 400px;
+  margin: auto;
+  padding: 2em;
+  border: 2px solid black;
+  position: relative;
+}
+
+.inner-div {
+  display: flex;
+  vertical-align: bottom;
+  padding: 1em;
+}
+
+.inner-div > p {
+  font-weight: bolder;
+}
+p {
+  margin: 0.5em;
+}
+
+.float-right {
+  display: inline-block;
+  position: absolute;
+  right: 2px;
+  bottom: 5px;
+}
+.float-right button {
+  margin: 0.5em;
+}
+
+.error {
+  color: red;
+}

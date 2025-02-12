@@ -1,0 +1,38 @@
+<div>
+  <h2>Add Improvements</h2>
+  <div class="container">
+    <label for="improvement">Type: </label>
+    <select (change)="getResourcesRequired(select.value)" selected="" #select>
+      <option value="">None</option>
+      <option
+        *ngFor="let improvement of improvements"
+        value="{{ improvement }}"
+      >
+        {{ improvement }}
+      </option>
+    </select>
+
+    <div class="inner-div">
+      <p>Benefit:</p>
+
+      <div>
+        <p>{{ benefit?.count }} {{ benefit?.type }}</p>
+      </div>
+    </div>
+    <div class="inner-div">
+      <p>Cost:</p>
+
+      <div>
+        <p *ngFor="let resource of resources">
+          {{ resource.count }} {{ resource.type }}
+        </p>
+      </div>
+    </div>
+
+    <div class="float-right">
+      <button (click)="add(select.value)" [disabled]="!enableAdd">Add</button>
+      <button (click)="cancel()">Cancel</button>
+    </div>
+  </div>
+  <p class="error">{{ errorMessage }}</p>
+</div>

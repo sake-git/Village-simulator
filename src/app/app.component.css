@@ -1,0 +1,47 @@
+a {
+  right: 15px;
+  top: 50px;
+  background-color: rgb(215, 228, 228);
+  text-decoration: none;
+  padding: 5px;
+  position: absolute;
+}
+
+.container {
+  text-align: center;
+  margin: auto;
+  background-color: rgb(100, 169, 169);
+  height: 800px;
+  padding: 10px;
+  position: relative;
+}
+
+a:hover {
+  background-color: rgb(46, 105, 124);
+}
+
+.inner-div {
+  display: flex;
+}
+
+.resource {
+  width: 25%;
+}
+
+.map {
+  width: 60%;
+}
+
+@media only screen and (max-width: 500px) {
+  .inner-div {
+    display: block;
+  }
+  .resource,
+  .map {
+    width: 100%;
+  }
+  .container {
+    height: auto;
+    overflow: auto;
+  }
+}

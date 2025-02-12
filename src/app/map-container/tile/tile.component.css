@@ -1,0 +1,38 @@
+.div-grid {
+  background-color: rgb(215, 228, 228);
+  width: 5em;
+  height: 5em;
+  display: inline-block;
+  border: 2px solid black;
+  position: relative;
+}
+
+img {
+  width: 4em;
+  height: 4em;
+  margin: auto;
+  display: block;
+}
+
+.level {
+  position: absolute;
+  left: 40%;
+  bottom: 0px;
+  color: white;
+  background-color: blue;
+  padding: 5px;
+  border-radius: 40%;
+  height: 1em;
+  width: 1em;
+}
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    overflow: auto;
+  }
+}
