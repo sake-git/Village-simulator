@@ -45,3 +45,9 @@ a:hover {
     overflow: auto;
   }
 }
+
+.container {
+  background-size: cover;
+
+  background-image: url("https://static.vecteezy.com/system/resources/previews/010/840/823/non_2x/village-cartoon-background-illustration-with-old-style-cottage-well-trees-narrow-road-mountains-and-green-grass-free-vector.jpg");
+}

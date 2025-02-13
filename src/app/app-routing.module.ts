@@ -5,6 +5,7 @@ import { AddImprovementDialogComponent } from './map-container/add-improvement-d
 import { EditImprovementDialogComponent } from './map-container/edit-improvement-dialog/edit-improvement-dialog.component';
 import { ResourcesViewComponent } from './resource/resources-view/resources-view.component';
 import { TileComponent } from './map-container/tile/tile.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -21,6 +22,7 @@ const routes: Routes = [
     component: EditImprovementDialogComponent,
   },
   { path: 'resource', component: ResourcesViewComponent },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({

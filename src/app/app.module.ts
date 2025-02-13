@@ -9,6 +9,7 @@ import { TileComponent } from './map-container/tile/tile.component';
 import { AddImprovementDialogComponent } from './map-container/add-improvement-dialog/add-improvement-dialog.component';
 import { EditImprovementDialogComponent } from './map-container/edit-improvement-dialog/edit-improvement-dialog.component';
 import { provideHttpClient } from '@angular/common/http';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { provideHttpClient } from '@angular/common/http';
     TileComponent,
     AddImprovementDialogComponent,
     EditImprovementDialogComponent,
+    PageNotFoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideHttpClient()],
